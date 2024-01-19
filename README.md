@@ -15,4 +15,4 @@ Projeto desenvolvido com as seguintes tecnologias:
 - Consumo de API
 
 ## 💻Projeto Finalizado
-Acesse aqui: (https://prev-do-tempo.vercel.app/)
+Acesse aqui: https://prev-do-tempo.vercel.app/

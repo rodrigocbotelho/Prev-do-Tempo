@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #0180cd;
+    --azul-claro: #90cbf8;
+    --branco-hover: #f6f9ff;
+}
+
+body {
+    /* background-image: url("https://source.unsplash.com/1600x900/?landscape"); */
+    background-image: linear-gradient(90deg, var(--azul-claro), var(--azul));
+    height: 100vh;
+    font-family: sans-serif;
+    background-position: left center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    color: #d7ffe9;
+    position: relative;
+    background-color: #ffffff9d;
+    border: 1px solid var(--azul);
+    border-radius: 10px;
+    padding-bottom: 25px;
+    width: 30em;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-container {
+    font-family: 'Kanit', sans-serif;
+    color: var(--azul);
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+    padding: 14px 0;
+    border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+.box-entrada-informacoes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.input-city {
+    font-family: 'Kanit', sans-serif;
+    color: var(--azul);
+
+    outline: 0;
+    border: none;
+    border: 2px solid var(--azul-claro);
+    border-radius: 5px;
+    width: 60%;
+    height: 32px;
+    padding: 0 10px;
+}
+
+.input-city::placeholder {
+    font-family: 'Kanit', sans-serif;
+    color: var(--azul-claro);
+}
+
+.btn-cidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 30px;
+    background: var(--azul);
+    text-transform: uppercase;
+    font-size: .99em;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 500ms;
+}
+
+.btn-cidade:hover {
+    background-color: var(--azul-claro);
+}
+
+.icon-btn {
+    width: 1.25em;
+}
+
+.box-informacoes {
+    display: none;
+    font-family: 'Kanit', sans-serif;
+    color: var(--azul);
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag-country {
+    width: 50px;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.datos .icone-tempo {
+    width: 60px;
+}
+
+.cidade {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.temperatura {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+/* Adicionando media queries para tornar o layout responsivo */
+@media screen and (max-width: 500px) {
+    .main-container {
+        width: 90vw;
+        padding: 20px 0;
+    }
+
+    .title-container {
+        font-size: 1.55em;
+    }
+}
